@@ -1,0 +1,56 @@
+<!-- Preloader Start -->
+<div id="preloader-active">
+  <div class="preloader d-flex align-items-center justify-content-center">
+    <div class="preloader-inner position-relative">
+      <div class="preloader-circle"></div>
+      <div class="preloader-img pere-text">
+        <%= image_tag('logo1.png', alt: '', style: '') %>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Preloader Start -->
+<header>
+  <!-- Header Start -->
+  <div class="header-area header_area header-transparent background-color-default">
+    <div class="main-header">
+      <div class="header-bottom  header-sticky">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <!-- Logo -->
+            <div class="col-xl-4 col-lg-2 col-md-3 col-sm-5 col-8">
+              <div class="logo">
+                <a href="<%= root_path %>">
+                  <%= image_tag('logo1.png', alt: '', style: 'max-width: 136px;') %>
+                </a>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-7 col-md-7">
+              <!-- Main-menu -->
+              <div class="main-menu f-right d-none d-md-block">
+                <nav>
+                  <ul id="navigation">
+                    <li><a href="<%= root_path %>">Home</a></li>
+                    <li><a href="<%= about_path %>">About</a></li>
+                    <li><a href="<%= contact_path %>">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-2">
+              <div class="header-right-btn f-right d-none d-md-block">
+                <a href="<%= contact_path %>" class="btn header-btn">Contact Now</a>
+              </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="col-12">
+              <div class="mobile_menu d-block d-md-none" id="menu-mobile-slicknav">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header End -->
+</header>

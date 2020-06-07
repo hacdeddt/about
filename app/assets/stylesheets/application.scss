@@ -1,0 +1,91 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_self
+ */
+
+  @import "font-awesome";
+  @import "bootstrap";
+  @import 'variables';
+  @import 'color';
+	@import 'mixins';
+	@import 'overlay';
+	@import 'common';
+  @import "headerMenu";
+  @import "extend";
+  @import 'h1-hero';
+  @import 'all_startups';
+  @import 'wantTowork';
+  @import 'elements';
+  @import 'contact';
+  @import 'about-details';
+  @import 'footer';
+  @import 'owl.carousel.min';
+  @import 'slicknav';
+  @import 'flaticon';
+  @import 'animate.min';
+  @import 'magnific-popup';
+  @import 'themify-icons';
+  @import 'slick';
+  @import 'nice-select';
+  @import "toastr";
+  
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .background-color-default {
+    background: #000d20;
+  }
+
+  .slick-track {
+    @media #{$small_mobile} {
+      top: 100px;
+      height: 400px;
+    }
+    @media #{$xs_mobile} {
+      top: 60px;
+      height: 500px;
+    }
+    @media #{$large_mobile} {
+      top: 100px;
+      height: 400px;
+    }
+    @media only screen and (min-width: 755px) and (max-width: 860px) {
+      top: 46px;
+      height: 440px;
+    }
+    @media only screen and (min-width: 1020px) and (max-width: 1023px) {
+      top: 46px;
+      height: 520px;
+    }
+    @media only screen and (min-width: 1024px) and (max-width: 1060px) {
+      height: 520px;
+    }
+  }
+
+  .pt-50 {
+    @media only screen and (min-width: 411px) and (max-width: 717px) {
+      padding-top: 74px;
+    }
+  }
+
+  .margin-top-for-form-contact {
+    @media only screen and (min-width: 576px) and (max-width: 991px) {
+      margin-top: -170px;
+    }
+    @media only screen and (min-width: 992px) {
+      margin-top: -290px;
+    }
+  }
