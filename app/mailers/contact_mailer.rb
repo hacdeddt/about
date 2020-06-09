@@ -6,6 +6,6 @@ class ContactMailer < ApplicationMailer
 
   def send_mail_thanks_to_user(params)
     @params = params
-    mail(to: params[:email], subject: "Is Startup - Cảm ơn bạn đã liên hệ với chúng tôi")
+    mail(to: params[:email], subject: "Istart-up - Cảm ơn bạn đã liên hệ với chúng tôi")
   end
 end
